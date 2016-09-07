@@ -148,6 +148,7 @@ public class FindBanner implements IjsonView{
             String imageurl = bannerList.get(4-position).getPic_url();
             Picasso.with(mContext).load(imageurl).into(imageView);
             titleTv.setText(title);
+
             container.addView(imageView);
             return imageView;
         }
